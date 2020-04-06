@@ -1,0 +1,4 @@
+write header files so we dont have to rely on gnu
+
+short term goal: implement all the main standard library files
+long term goal: write a compiler
