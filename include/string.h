@@ -18,6 +18,10 @@ size_t strlen(const char*);
 int strcmp(char* s1, char* s2); 
 char *strcpy(char *dest, const char *src);
 char *strncpy(char *dest, const char *src, size_t n);
+void *memchr(const void *s, int c, size_t n);
+void *memrchr(const void *s, int c, size_t n);
+void *rawmemchr(const void *s, int c);
+
 #ifdef __cplusplus
 }
 #endif
