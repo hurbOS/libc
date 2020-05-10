@@ -3,6 +3,8 @@
  
 #include <sys/cdefs.h> 
 #include <stddef.h>
+
+#define NULL (void*) 0; // C99 
  
 #ifdef __cplusplus
 extern "C" {
@@ -14,6 +16,8 @@ void* memmove(void*, const void*, size_t);
 void* memset(void*, int, size_t);
 size_t strlen(const char*);
 int strcmp(char* s1, char* s2); 
+char *strcpy(char *dest, const char *src);
+char *strncpy(char *dest, const char *src, size_t n);
 #ifdef __cplusplus
 }
 #endif
