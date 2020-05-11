@@ -21,7 +21,12 @@ char *strncpy(char *dest, const char *src, size_t n);
 void *memchr(const void *s, int c, size_t n);
 void *memrchr(const void *s, int c, size_t n);
 void *rawmemchr(const void *s, int c);
-
+char *strchar(const char *s, int c);
+char *strrchr(const char *s, int c);
+char *strchrnul(const char *s, int c);
+char *strcat(char *dest, const char *src);
+size_t strcspn(const char *str1, const char *str2);
+char *strpbrk(const char *str1, const char *str2);
 #ifdef __cplusplus
 }
 #endif
