@@ -1,8 +1,10 @@
 #include <string.h>
  
-size_t strlen(const char* str) {
-	size_t len = 0;
-	while (*str++, len++) // advance the pointer instead of just accessing array explicitly
+size_t strlen(const char *str)
+{
+    const char *b = str;
+    while (*b++) {
         ;;
-	return len;
+    }
+    return (size_t)(b - str);
 }
